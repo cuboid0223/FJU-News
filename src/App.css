@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: Helvetica;
+}
+/*------------------Navbar start---------------------*/
+.main-nav {
+    background-color: #8F8073;
+    display: flex;
+    box-sizing: border-box;
+}
+.main-nav .logo {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.main-nav .Navbar-title {
+    height: 50px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.main-nav .menu {
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav .menu a{
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.main-nav .menu .link {
+    width: 100px;
+    position: relative;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-nav .menu .active{
+    background-color: #EAE6E5;
+    font-weight: 700;
+}
+.main-nav .sub-menu {
+    position: absolute;
+    width: 8em;
+    display: none;
+    top: 100%;
+}
+
+.main-nav li:hover>.sub-menu {
+    display: block;
+}
+
+/*------------------Navbar end---------------------*/
+
+/*------------------Header start--------------------*/
+.header{
+    background-color: #444545;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header .container{
+    width: 800px;
+    margin-left: 4em;  
+}
+.header p{
+    padding: 10px 0px;
+}
+.header img{
+    margin-left: 5px;
+    cursor:pointer;
+}
+/*------------------Header end-------------------*/
+
+/*------------------PostItem start-------------------*/
+.postitem{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.postitem .container{
+    width: 600px;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.postitem .container p{
+    width: 400px;
+}
+.postitem .container .link{
+    text-decoration: none;
+    color: #444545;
+}
+.postitem .container:after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    border: 1px solid grey;
+}
+.postitem .btn{
+    font-size: 15px;
+    font-weight:bold;
+    background-color: #EB5160;
+    color: #fff;
+    border-color: transparent;
+    border-radius: 8px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    cursor:pointer;
+}
+/*------------------PostItem end-------------------*/
+
+/*------------------About start-------------------*/
+.about{
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    box-sizing: border-box;
+}
+.about .wrap2{
+    margin: 30px 0px;
+}
+.about h3{
+    font-size: 25px;
+    color: #444545;
+}
+.about p{
+    margin-top: 5px;
+}
+/*------------------About end-------------------*/
+
+/*------------------New start-------------------*/
+.new{
+    position: relative;
+    height: 600px;
+    margin: 60px;
+}
+.new p{
+    font-size: 30px;
+    font-weight: bold;
+    color: #444545;
+    margin-top: 10px;
+}
+.new .title-box,
+.new .content-box{
+    width: 500px;
+    border: 1px solid #444545;
+    margin-top: 10px;
+    outline:none
+}
+.new .title-box{
+    height: 30px;
+}
+.new .content-box{
+    height: 400px;
+    resize: horizontal;
+    overflow: auto;
+}
+.new .submit-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: #8F8073;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+    cursor:pointer;
+    outline:none
+}
+/*------------------New end-------------------*/
+
+/*------------------OpenPost start-------------------*/
+.openpost{
+    margin: 60px;
+}
+.openpost pre{
+    font-size: 20px;
+    color: #444545;
+}
+.openpost h2{
+     color: #444545;
+     margin-bottom: 1em;
+}
